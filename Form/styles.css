@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #4E65FF, #92EFFD);
+  padding: 5px 10px;
+}
+
+.wrapper {
+  max-width: 550px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 50px;
+}
+
+.wrapper .form {
+  width: 100%;
+}
+
+.wrapper .form .title {
+  font-size: 28px;
+  font-weight: 750;
+  margin-bottom: 45px;
+  color: #140392;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form .inputfield {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label {
+  width: 200px;
+  color: #0e0261;
+  margin-right: 10px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.wrapper .form .inputfield .custom_select select {
+  width: 100%; 
+  outline:#030576;
+  border: 1px solid #0c24d7;
+  font-size: 17px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .custom_select select:focus {
+  border: 1px solid #150bd1;
+}
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #0c24d7;
+  font-size: 17px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea {
+  height: 125px;
+  resize: none;
+}
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus {
+  border: 1px solid #150bd1;
+}
+
+.wrapper .form .inputfield p {
+  font-size: 14px;
+  color: #0509f5;
+}
+
+.wrapper .form .inputfield .check {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.wrapper .form .inputfield .check .checkmark {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #030576;
+  display: block;
+  position: relative;
+}
+
+.wrapper .form .inputfield .check .checkmark:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark {
+  background: #052cee;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before {
+  display: block;
+}
+
+.wrapper .form .inputfield .btn {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0;
+  background: #3262f1;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover {
+  background: #0524eb;
+}
+
+/* Add the following CSS for error message styling */
+.inputfield input.error,
+.inputfield textarea.error {
+  border: 1px solid red;
+}
+
+.error-message {
+  font-style: italic;
+  font-size: 12px;
+  color: red;
+}
+
+/* The styles below are from your existing CSS, retained for the animation */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.text {
+  position: absolute;
+  width: 450px;
+  left: 50%;
+  margin-left: 400px;
+  height: 40px;
+  top: 50%;
+  margin-top: -60px;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  width: 220px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
