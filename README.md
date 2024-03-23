@@ -1,5 +1,5 @@
 # forms-in-html
-![Registration Form Image](Form\Screenshot 2024-03-23 171031.png)
+![Registration Form Image](Form/Screenshot%202024-03-23%20171031.png)
 
 # Registration Form with Validation
 
