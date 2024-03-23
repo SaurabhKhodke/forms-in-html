@@ -1,4 +1,5 @@
 # forms-in-html
+![Registration Form Image](Form\Screenshot 2024-03-23 171031.png)
 
 # Registration Form with Validation
 
